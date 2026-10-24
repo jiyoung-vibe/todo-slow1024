@@ -1,22 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>이번 주 장볼 것</title>
-  </head>
-  <body>
-    <h1>이번 주 장볼 것</h1>
-
-    <form>
-      <input type="text" placeholder="살 것 적기">
-      <button type="button">추가</button>
-    </form>
-
-    <ul>
-      <li>우유 <span>남은 개수: 1</span></li>
-      <li>계란 <span>남은 개수: 1</span></li>
-      <li>사과 <span>남은 개수: 1</span></li>
-    </ul>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>이번 주 장볼 것</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>이번 주 장볼 것</h1>
+  <input id="item" placeholder="살 것 적기">
+  <button id="add" type="button">추가</button>
+  <ul id="list">
+    <li><input type="checkbox"> 우유 <button type="button">삭제</button></li>
+    <li><input type="checkbox"> 계란 <button type="button">삭제</button></li>
+    <li><input type="checkbox"> 사과 <button type="button">삭제</button></li>
+  </ul>
+  <p>남은 개수: <span id="count">3</span></p>
+</body>
 </html>
